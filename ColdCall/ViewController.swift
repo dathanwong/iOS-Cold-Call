@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     @IBAction func coldCallPressed(_ sender: UIButton) {
         updateUI()
     }
@@ -25,6 +26,22 @@ class ViewController: UIViewController {
 
     func updateUI(){
         nameLabel.text = names[Int.random(in: 0..<names.count)]
+        let randNum = Int.random(in: 1...5)
+        numberLabel.text = String(randNum)
+        switch randNum {
+        case 1:
+            numberLabel.textColor = UIColor.red
+        case 2:
+            numberLabel.textColor = UIColor.red
+        case 3:
+            numberLabel.textColor = UIColor.orange
+        case 4:
+            numberLabel.textColor = UIColor.orange
+        case 5:
+            numberLabel.textColor = UIColor.green
+        default:
+            numberLabel.textColor = UIColor.black
+        }
     }
     
 }

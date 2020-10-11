@@ -37,12 +37,20 @@
                                     <action selector="coldCallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qm2-DJ-Ou0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgX-v4-UB8">
+                                <rect key="frame" x="151" y="338" width="112" height="220"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="184"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="eH3-gw-Dfa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AU2-zV-uBG"/>
+                            <constraint firstItem="bgX-v4-UB8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OUA-8e-Yab"/>
                             <constraint firstItem="eH3-gw-Dfa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UNH-bd-BVa"/>
                             <constraint firstItem="AXZ-rO-9qI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VXh-KJ-11Z"/>
+                            <constraint firstItem="bgX-v4-UB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g4b-bh-MwC"/>
                             <constraint firstItem="eH3-gw-Dfa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hbT-46-SY5"/>
                             <constraint firstItem="AXZ-rO-9qI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zc4-1V-UqY"/>
                         </constraints>
@@ -50,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="AXZ-rO-9qI" id="Ser-VQ-vRY"/>
+                        <outlet property="numberLabel" destination="bgX-v4-UB8" id="KR4-Wr-7gs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
